@@ -13,6 +13,7 @@ void loop(){
  
   ValorADC= analogRead(A0);
   voltaje= ValorADC*(5.0/1.023)/(1000);
+  Serial.print("Voltaje= ");
   Serial.println(voltaje);
   delay(2);
 }
