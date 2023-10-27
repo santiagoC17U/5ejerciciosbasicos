@@ -19,7 +19,7 @@ void loop(){
   paro=digitalRead(11);
    mant=digitalRead(10);
    ValorADC= analogRead(A0);
-  voltaje= ValorADC*(5.0/1.023);
+  voltaje= ValorADC*(5.0/1.023)/25;
   Serial.println(voltaje);
   delay(2);
   if (paro==0){
