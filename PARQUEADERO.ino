@@ -1,5 +1,3 @@
-#define l 4;
-#define q 3;
 int l=0;
 float q=0;
 int coste=0;
@@ -18,15 +16,14 @@ void setup()
 }
 
 void loop(){
+ l=digitalRead(4);
+  q=digitalRead(3);
   cupos>=0;
   if(cupos<15){
     digitalWrite(5,HIGH);
     digitalWrite(7,LOW);
   }
-  else{ 
-    digitalWrite(5,LOW);
-      digitalWrite(7,HIGH);
-  }
+ 
   
   if (l==HIGH && cupos<15){
      cupos=cupos+1;
@@ -40,6 +37,8 @@ void loop(){
     
     if (cupos>14){
       Serial.print("\n ¡PARQUEADERO LLENO!");
+      digitalWrite(5,LOW);
+       digitalWrite(7,HIGH);
       delay(3000);
     }
   
@@ -56,6 +55,7 @@ void loop(){
     Serial.print(" vehiculos");
   } 
 }
+
 
   
   
