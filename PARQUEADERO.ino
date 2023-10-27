@@ -1,7 +1,6 @@
 int l=0;
 float q=0;
 int coste=0;
-int cupos=0;
 
 void setup()
 {
