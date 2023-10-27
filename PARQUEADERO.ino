@@ -1,3 +1,5 @@
+#define l 4;
+#define q 3;
 int l=0;
 float q=0;
 int coste=0;
@@ -15,8 +17,6 @@ void setup()
 }
 
 void loop(){
-  l=digitalRead(11);
-  q=digitalRead(10);
   cupos>=0;
   if(cupos<15){
     digitalWrite(5,HIGH);
